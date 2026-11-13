@@ -1,0 +1,31 @@
+[{
+ "name": "Hemoglobin",
+ "modelSeeds": [
+  "568755589"
+ ],
+ "sequences": [
+  {
+   "proteinChain": {
+    "sequence": "VLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLSHCLLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR",
+    "count": 2,
+    "useStructureTemplate": true
+   }
+  },
+  {
+   "ligand": {
+    "ligand": "CCD_HEM",
+    "count": 4
+   }
+  },
+  {
+   "proteinChain": {
+    "sequence": "VHLTPEEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFESFGDLSTPDAVMGNPKVKAHGKKVLGAFSDGLAHLDNLKGTFATLSELHCDKLHVDPENFRLLGNVLVCVLAHHFGKEFTPPVQAAYQKVVAGVANALAHKYH",
+    "count": 2,
+    "useStructureTemplate": true
+   }
+  }
+ ],
+ "dialect": "alphafoldserver",
+ "version": 3
+}
+]
