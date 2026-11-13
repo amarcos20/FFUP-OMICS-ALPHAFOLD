@@ -41,15 +41,18 @@
   ],
   "sections": {
     "s1": {
-      "description": "Abertura e enquadramento biológico e ómico (Afonso)",
+      "before": null,
+      "description": "Abertura e enquadramento biológico e ómico (Artur)",
       "start": "capa"
     },
     "s2": {
-      "description": "Arquitetura, acesso e algoritmo (Pedro)",
+      "before": null,
+      "description": "Arquitetura, acesso e algoritmo (Afonso)",
       "start": "acesso"
     },
     "s3": {
-      "description": "Resultados, métricas, comunidade e limitações (Artur)",
+      "before": null,
+      "description": "Resultados, métricas, comunidade e limitações (Pedro)",
       "start": "metricas"
     },
     "s4": {
