@@ -1,0 +1,85 @@
+((*- extends 'style_jupyter.tex.j2' -*))
+((=- Template do relatório da UC Ómicas.
+     Capa e metadados lidos de nb.metadata.relatorio (editar no notebook). -=))
+
+((*- block docclass -*))
+\documentclass[10pt,a4paper]{article}
+((*- endblock docclass -*))
+
+((* block packages *))
+((( super() )))
+% --- Língua e tipografia -----------------------------------------------------
+\usepackage[portuguese]{babel}
+% Arial 10 (enunciado). Fallback: Liberation Sans (métricas iguais) / TeX Gyre Heros.
+\IfFontExistsTF{Arial}{\setmainfont{Arial}}{%
+  \IfFontExistsTF{Liberation Sans}{\setmainfont{Liberation Sans}}{\setmainfont{TeX Gyre Heros}}}
+\usepackage{microtype}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tikz}
+((* endblock packages *))
+
+((* block definitions *))
+((( super() )))
+\definecolor{uporto}{HTML}{6B2C8A}
+% Marcador de trabalho por fazer (procurar "afazer" antes da entrega)
+\newcommand{\afazer}[1]{{\color{red}\small [A FAZER: #1]}}
+((* endblock definitions *))
+
+((* block commands *))
+((( super() )))
+% Legendas visíveis (o template base do nbconvert esconde-as)
+\captionsetup{format=plain,labelfont=bf,font=small,aboveskip=6pt,belowskip=0pt}
+\graphicspath{{../}}
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{0pt}
+\titleformat{\section}{\large\bfseries\color{uporto}}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{0.5em}{}
+\titlespacing*{\section}{0pt}{10pt}{4pt}
+\titlespacing*{\subsection}{0pt}{8pt}{2pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small ((( nb.metadata.relatorio.header | default('') )))}
+\fancyhead[R]{\small UC Ómicas 2026/2027}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+((* endblock commands *))
+
+((* block margins *))
+\geometry{a4paper,tmargin=2.2cm,bmargin=2.2cm,lmargin=2.2cm,rmargin=2.2cm,headheight=14pt}
+((* endblock margins *))
+
+((* block maketitle *))
+((*- set r = nb.metadata.relatorio -*))
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+  \centering
+  \includegraphics[height=2.1cm]{assets/logos/fcup.png}\hfill
+  \includegraphics[height=2.1cm]{assets/logos/ffup.png}\par
+  \vspace{4.5cm}
+  {\color{uporto}\rule{\linewidth}{1.2pt}}\par\vspace{0.6cm}
+  {\fontsize{24}{30}\selectfont\bfseries ((( r.title ))) \par}
+  \vspace{0.4cm}
+  {\Large ((( r.subtitle ))) \par}
+  \vspace{0.6cm}
+  {\color{uporto}\rule{\linewidth}{1.2pt}}\par
+  \vspace{2.5cm}
+  {\large Trabalho realizado no âmbito da Unidade Curricular\\[2pt] \textbf{((( r.course )))}\par}
+  \vfill
+  \begin{tabular}{l r}
+  ((*- for a in r.authors *))
+    ((( a.name ))) & up((( a.number ))) \\
+  ((*- endfor *))
+  \end{tabular}\par
+  \vspace{1.5cm}
+  {\large ((( r.date )))\par}
+\end{titlepage}
+\hypersetup{pageanchor=true}
+\setcounter{page}{1}
+((* endblock maketitle *))
+
+((* block bibliography *))
+\bibliographystyle{unsrtnat}
+\bibliography{../refs}
+((* endblock bibliography *))
