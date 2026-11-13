@@ -1,0 +1,27 @@
+<section id="algoritmo">
+<div class="head">
+<p class="eyebrow">ALGORITMO</p>
+<h2>Coevolução + aprendizagem profunda</h2>
+</div>
+<p class="lead">Resíduos em contacto mutam de forma correlacionada: esse sinal no alinhamento múltiplo (MSA) é traduzido em geometria por uma rede neuronal.</p>
+<div class="cards c2">
+<div class="card af2 anim" style="--i:0">
+<h3 style="color:var(--af2-text)">AlphaFold 2 (2021)</h3>
+<ul>
+<li>Evoformer × 48: representações do MSA e de pares, com atenção triangular</li>
+<li>Structure Module: resíduos como corpos rígidos (IPA)</li>
+<li>Recycling × 3 e relaxação Amber</li>
+</ul>
+</div>
+<div class="card af3 anim" style="--i:1">
+<h3 style="color:var(--af3-text)">AlphaFold 3 (2024)</h3>
+<ul>
+<li>Pairformer × 48, com o MSA reduzido a 4 blocos</li>
+<li>Módulo de difusão: remove “ruído” até às posições de todos os átomos</li>
+<li>Proteínas, DNA, RNA, ligandos, iões e PTMs</li>
+</ul>
+</div>
+</div>
+<div class="foot"><p>AlphaFold 2 e 3 · UC Ómicas</p><p class="pg"></p></div>
+<aside>PEDRO (≈ 60 s). O princípio é a coevolução: resíduos que estão em contacto mutam de forma correlacionada, e isso fica registado no alinhamento múltiplo. O AF2 mantém uma representação do MSA e outra de pares de resíduos; o Evoformer, com 48 blocos, troca informação entre as duas, e as atualizações triangulares impõem consistência geométrica. O Structure Module trata cada resíduo como um corpo rígido e usa Invariant Point Attention; o processo repete-se três vezes (recycling) e termina com uma relaxação Amber. O AF3 simplifica o MSA, troca o Evoformer pelo Pairformer e, sobretudo, substitui o Structure Module por um módulo de difusão, como nos geradores de imagens: parte de ruído e refina até às coordenadas de todos os átomos. Por isso modela qualquer biomolécula — mas, sendo generativo, pode “alucinar” estrutura em regiões desordenadas.</aside>
+</section>

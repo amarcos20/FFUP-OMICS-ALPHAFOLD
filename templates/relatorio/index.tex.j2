@@ -64,7 +64,16 @@
   {\Large ((( r.subtitle ))) \par}
   \vspace{0.6cm}
   {\color{uporto}\rule{\linewidth}{1.2pt}}\par
+  ((*- if r.epigraph *))
+  \vspace{1.2cm}
+  \begin{minipage}{0.75\linewidth}
+    \centering\itshape\small ``((( r.epigraph )))''\par
+    \vspace{4pt}\upshape\footnotesize ((( r.epigraph_source )))
+  \end{minipage}\par
+  \vspace{1.3cm}
+  ((*- else *))
   \vspace{2.5cm}
+  ((*- endif *))
   {\large Trabalho realizado no âmbito da Unidade Curricular\\[2pt] \textbf{((( r.course )))}\par}
   \vfill
   \begin{tabular}{l r}

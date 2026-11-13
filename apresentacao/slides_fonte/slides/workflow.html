@@ -1,0 +1,11 @@
+<section id="workflow" class="alt">
+<div class="head">
+<p class="eyebrow">FLUXO DE TRABALHO</p>
+<h2>Da sequência aos modelos</h2>
+</div>
+<div class="fig" style="align-self:center">
+<img src="/_blob/04773cf3143021ff1b6ba6b8c73690c9" alt="Fluxo de trabalho: 1 input (FASTA ou JSON), 2 pesquisa de homólogos (MSA e templates), 3 tronco (Evoformer no AF2, Pairformer no AF3), 4 estrutura (Structure Module no AF2, difusão no AF3), 5 output (5 modelos e métricas de confiança)" style="width:1500px;height:601px;object-fit:contain">
+</div>
+<div class="foot"><p>AlphaFold 2 e 3 · UC Ómicas</p><p class="pg"></p></div>
+<aside>PEDRO (≈ 40 s). Este é o nosso esquema do fluxo de trabalho. Entra a sequência — ou, no AF3, o JSON com todas as moléculas. Segue-se a pesquisa de homólogos e de templates, que corre em CPU e é o passo mais demorado numa instalação local. Depois vem a rede neuronal, em GPU: o tronco (Evoformer no AF2, Pairformer no AF3) e a geração da estrutura (Structure Module ou difusão). No fim saem cinco modelos ordenados por confiança, em PDB ou mmCIF, e as métricas de confiança em JSON. Passo ao Artur, que vai mostrar o que isto devolve na prática.</aside>
+</section>

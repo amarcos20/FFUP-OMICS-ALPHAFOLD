@@ -1,0 +1,14 @@
+<section id="metricas">
+<div class="head">
+<p class="eyebrow">O QUE DEVOLVE</p>
+<h2>Cinco modelos + a confiança em cada um</h2>
+</div>
+<div class="cards c3">
+<div class="card anim" style="--i:0"><h3>pLDDT</h3><p class="eyebrow">0–100, POR RESÍDUO</p><p class="txt">&gt; 90 muito alta · 70–90 confiante · &lt; 50 provável desordem. Fica na coluna B-factor do modelo.</p></div>
+<div class="card anim" style="--i:1"><h3>PAE</h3><p class="eyebrow">Å, MATRIZ N × N</p><p class="txt">Erro esperado na posição relativa de dois resíduos: confiança entre domínios e entre cadeias.</p></div>
+<div class="card anim" style="--i:2"><h3>pTM e ipTM</h3><p class="eyebrow">0–1</p><p class="txt">Topologia global e interfaces. ipTM &gt; 0,8: complexo de confiança; &lt; 0,6: provável falha.</p></div>
+</div>
+<p class="note">Os modelos vêm em PDB ou mmCIF e as métricas em JSON. As métricas são calibradas em cada versão e <b>não se comparam entre AF2 e AF3</b>: a validação objetiva faz-se contra estruturas experimentais (RMSD, TM-score).</p>
+<div class="foot"><p>AlphaFold 2 e 3 · UC Ómicas</p><p class="pg"></p></div>
+<aside>ARTUR (≈ 40 s). Cada previsão devolve cinco modelos ordenados e três tipos de métricas de confiança. O pLDDT, de 0 a 100, é por resíduo: acima de 90 é muito alta, abaixo de 50 indica normalmente uma região desordenada; vem guardado no B-factor, por isso qualquer visualizador colore o modelo pela confiança. O PAE é uma matriz que diz quão certa é a posição relativa de dois resíduos — útil para domínios e cadeias. O pTM e o ipTM estimam a qualidade global e das interfaces. Atenção: estas métricas não se comparam entre versões; para validar a sério, compara-se com estruturas experimentais. Foi o que fizemos.</aside>
+</section>

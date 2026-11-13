@@ -1,0 +1,16 @@
+<section id="acesso">
+<div class="head">
+<p class="eyebrow">ARQUITETURA E IMPLEMENTAÇÃO</p>
+<h2>Quatro formas de usar o AlphaFold</h2>
+</div>
+<table class="tab">
+<tr><th style="width:24%">Via</th><th style="width:16%">Versão</th><th style="width:28%">Precisa de</th><th style="width:32%">Principal limitação</th></tr>
+<tr><td>AlphaFold Server</td><td>AF3</td><td>Browser e conta Google</td><td>Quota diária; uso não comercial</td></tr>
+<tr><td>ColabFold</td><td>AF2</td><td>Browser (GPU grátis do Colab)</td><td>Memória da GPU limita o tamanho</td></tr>
+<tr><td>AlphaFold DB</td><td>AF2, já calculado</td><td>Nada (web ou API REST)</td><td>Só cadeias isoladas naturais</td></tr>
+<tr><td>Instalação local</td><td>AF2 e AF3</td><td>Linux, GPU NVIDIA, Docker</td><td>0,6 a 2,6 TB de bases de dados</td></tr>
+</table>
+<p class="note">Python + JAX + Haiku; pesquisa de homólogos com HMMER e HH-suite (ou MMseqs2 no ColabFold). Sem interface gráfica local: linha de comandos, notebook ou web. No Bioconda só existe o ColabFold. <b>Usámos as três primeiras vias.</b></p>
+<div class="foot"><p>AlphaFold 2 e 3 · UC Ómicas</p><p class="pg"></p></div>
+<aside>PEDRO (≈ 45 s). O AlphaFold está escrito em Python sobre JAX e Haiku, e usa ferramentas clássicas para os alinhamentos: HMMER e HH-suite. Há quatro formas de o usar. O AlphaFold Server dá acesso ao AF3 no browser, mas com quota diária e só para uso não comercial. O ColabFold corre o AF2 num notebook com GPU gratuita e substitui as pesquisas de homólogos por MMseqs2, 40 a 60 vezes mais rápido. A AlphaFold DB tem as previsões já feitas, acessíveis por API. A instalação local é por Docker e exige GPU e até 2,6 TB de bases de dados; o AF3 pede ainda 64 GB de RAM e uma GPU de classe A100. No Bioconda só está o ColabFold. Nós usámos as três primeiras.</aside>
+</section>

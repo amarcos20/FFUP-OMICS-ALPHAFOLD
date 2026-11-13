@@ -1,0 +1,61 @@
+{
+  "v": 5,
+  "attachments": {},
+  "createdOnFiles": {
+    "at": "2026-11-13T17:30:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "faces": {
+    "ibm-plex-sans": {
+      "family": "IBM Plex Sans",
+      "href": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap"
+    },
+    "space-grotesk": {
+      "family": "Space Grotesk",
+      "href": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..700&display=swap"
+    }
+  },
+  "format": {
+    "shared": [
+      "project/deck.css"
+    ],
+    "v": 1
+  },
+  "lists": "css",
+  "order": [
+    "capa",
+    "problema",
+    "omica",
+    "pergunta",
+    "acesso",
+    "algoritmo",
+    "workflow",
+    "metricas",
+    "exemplo",
+    "estados",
+    "licencas",
+    "limitacoes",
+    "conclusao",
+    "e03cfb41"
+  ],
+  "sections": {
+    "s1": {
+      "description": "Abertura e enquadramento biológico e ómico (Afonso)",
+      "start": "capa"
+    },
+    "s2": {
+      "description": "Arquitetura, acesso e algoritmo (Pedro)",
+      "start": "acesso"
+    },
+    "s3": {
+      "description": "Resultados, métricas, comunidade e limitações (Artur)",
+      "start": "metricas"
+    },
+    "s4": {
+      "description": "Conclusão (Afonso)",
+      "start": "conclusao"
+    }
+  },
+  "title": "AlphaFold 2 e AlphaFold 3 — UC Ómicas"
+}
