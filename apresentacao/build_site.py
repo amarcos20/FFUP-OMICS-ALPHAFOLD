@@ -112,7 +112,7 @@ def main(destino: Path) -> None:
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{titulo}</title>
-<meta name="description" content="Apresentação do trabalho da UC Ómicas sobre o AlphaFold 2 e AlphaFold 3.">
+<meta name="description" content="Apresentação do trabalho da UC Ómicas sobre o AlphaFold (versões 2 e 3).">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 {fontes}

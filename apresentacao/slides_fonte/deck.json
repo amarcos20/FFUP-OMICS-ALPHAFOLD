@@ -42,17 +42,17 @@
   "sections": {
     "s1": {
       "before": null,
-      "description": "Abertura e enquadramento biológico e ómico (Artur)",
+      "description": "Abertura e enquadramento biológico e ómico (Afonso)",
       "start": "capa"
     },
     "s2": {
       "before": null,
-      "description": "Arquitetura, acesso e algoritmo (Afonso)",
+      "description": "Implementação, algoritmo e fluxo de trabalho (Pedro)",
       "start": "acesso"
     },
     "s3": {
       "before": null,
-      "description": "Resultados, métricas, comunidade e limitações (Pedro)",
+      "description": "Resultados, métricas, comunidade e limitações (Artur)",
       "start": "metricas"
     },
     "s4": {
@@ -60,5 +60,5 @@
       "start": "conclusao"
     }
   },
-  "title": "AlphaFold 2 e AlphaFold 3 — UC Ómicas"
+  "title": "AlphaFold — UC Ómicas"
 }

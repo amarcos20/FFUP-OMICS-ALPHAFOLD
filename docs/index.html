@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AlphaFold 2 e AlphaFold 3 — UC Ómicas</title>
-<meta name="description" content="Apresentação do trabalho da UC Ómicas sobre o AlphaFold 2 e AlphaFold 3.">
+<title>AlphaFold — UC Ómicas</title>
+<meta name="description" content="Apresentação do trabalho da UC Ómicas sobre o AlphaFold (versões 2 e 3).">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&amp;display=swap">
@@ -164,7 +164,7 @@ html, body { margin: 0; height: 100%; background: #0f0c1d; overflow: hidden; }
 </div>
 <div class="titulo">
 <p class="eyebrow">UC ÓMICAS · 2026/2027</p>
-<h1 style="transform:translate(0, -5px)">AlphaFold 2 e AlphaFold 3</h1>
+<h1 style="transform:translate(0, -5px)">AlphaFold</h1>
 <p class="sub">Previsão de estruturas biomoleculares por aprendizagem profunda</p>
 <div class="barra"></div>
 </div>
@@ -189,7 +189,7 @@ html, body { margin: 0; height: 100%; background: #0f0c1d; overflow: hidden; }
 <p class="big" style="color:var(--accent);font-size:112px">214 M</p>
 <p class="txt" style="font-size:32px">estruturas previstas disponíveis na AlphaFold Protein Structure Database (EMBL-EBI)</p>
 </div>
-<div class="foot"><p>AlphaFold 2 e 3 · UC Ómicas</p><p class="pg"></p></div>
+<div class="foot"><p>AlphaFold · UC Ómicas</p><p class="pg"></p></div>
 <aside>AFONSO (≈ 40 s). A função de uma proteína depende da sua estrutura 3D, e desde Anfinsen sabemos que essa estrutura está codificada na sequência. Prever a estrutura a partir da sequência foi um problema em aberto durante cerca de 50 anos. Em 2020, no CASP14, o AlphaFold 2 atingiu pela primeira vez exatidão comparável à experimental. Em 2021 surgiu a AlphaFold DB, hoje com mais de 214 milhões de estruturas. Em 2024 saiu o AlphaFold 3 e Hassabis e Jumper receberam o Nobel da Química.</aside>
 </section>
 <section id="omica" class="alt">
@@ -204,9 +204,9 @@ html, body { margin: 0; height: 100%; background: #0f0c1d; overflow: hidden; }
 <svg class="arrow-svg" width="72" height="36" viewBox="0 0 72 36" aria-hidden="true"><path d="M0 11h43V0l29 18-29 18V25H0z" fill="#6b2c8a"/></svg>
 <div class="card anim" style="--i:2"><h3>A jusante</h3><p class="txt">Treino e validação com estruturas do PDB: raios-X, crio-EM e RMN</p></div>
 </div>
-<p class="note">Não processa dados brutos de sequenciação nem espectros: recebe sequências já traduzidas. Abrange a <b>proteómica e genómica estrutural</b> (98,5% do proteoma humano previsto em 2021) e a <b>interactómica</b> (Multimer, AF3).</p>
-<div class="foot"><p>AlphaFold 2 e 3 · UC Ómicas</p><p class="pg"></p></div>
-<aside>AFONSO (≈ 40 s). A ómica a que o AlphaFold responde é a proteómica estrutural: faz a ponte entre as sequências da genómica e transcriptómica e a estrutura 3D. Ao contrário de outras ferramentas ómicas, não recebe dados brutos — nem reads nem espectros — mas sim a sequência de aminoácidos em FASTA; o AF3 aceita um JSON com DNA, RNA, ligandos, iões e modificações. As tecnologias de sequenciação e a proteómica por LC-MS/MS estão a montante; a jusante estão as técnicas experimentais do PDB, com que o modelo foi treinado e é validado.</aside>
+<p class="note">Não processa dados brutos de sequenciação nem espetros: recebe sequências já traduzidas. Abrange a <b>proteómica e genómica estrutural</b> (98,5% do proteoma humano previsto em 2021) e a <b>interactómica</b> (Multimer, AF3).</p>
+<div class="foot"><p>AlphaFold · UC Ómicas</p><p class="pg"></p></div>
+<aside>AFONSO (≈ 40 s). A ómica a que o AlphaFold responde é a proteómica estrutural: faz a ponte entre as sequências da genómica e transcriptómica e a estrutura 3D. Ao contrário de outras ferramentas ómicas, não recebe dados brutos — nem reads nem espetros — mas sim a sequência de aminoácidos em FASTA; o AF3 aceita um JSON com DNA, RNA, ligandos, iões e modificações. As tecnologias de sequenciação e a proteómica por LC-MS/MS estão a montante; a jusante estão as técnicas experimentais do PDB, com que o modelo foi treinado e é validado.</aside>
 </section>
 <section id="pergunta" class="dark" data-transition="fade">
 <p class="eyebrow">PERGUNTA BIOLÓGICA</p>
@@ -221,7 +221,7 @@ html, body { margin: 0; height: 100%; background: #0f0c1d; overflow: hidden; }
 <p class="pill">Desenho de fármacos</p>
 <p class="pill">Desenho de proteínas</p>
 </div>
-<div class="foot"><p>AlphaFold 2 e 3 · UC Ómicas</p><p class="pg"></p></div>
+<div class="foot"><p>AlphaFold · UC Ómicas</p><p class="pg"></p></div>
 <aside>AFONSO (≈ 30 s). A pergunta central é simples: dada uma sequência, qual é a estrutura 3D? O AF3 acrescenta: com que moléculas interage e como? As aplicações vão da anotação de proteínas desconhecidas à interpretação de variantes — o AlphaMissense, derivado do AlphaFold, classifica variantes missense em todo o proteoma — passando pelo apoio à cristalografia e crio-EM e pelo desenho de fármacos e de proteínas. Passo a palavra ao Pedro.</aside>
 </section>
 <section id="acesso">
@@ -237,7 +237,7 @@ html, body { margin: 0; height: 100%; background: #0f0c1d; overflow: hidden; }
 <tr><td>Instalação local</td><td>AF2 e AF3</td><td>Linux, GPU NVIDIA, Docker</td><td>0,6 a 2,6 TB de bases de dados</td></tr>
 </table>
 <p class="note">Python + JAX + Haiku; pesquisa de homólogos com HMMER e HH-suite (ou MMseqs2 no ColabFold). Sem interface gráfica local: linha de comandos, notebook ou web. No Bioconda só existe o ColabFold. <b>Usámos as três primeiras vias.</b></p>
-<div class="foot"><p>AlphaFold 2 e 3 · UC Ómicas</p><p class="pg"></p></div>
+<div class="foot"><p>AlphaFold · UC Ómicas</p><p class="pg"></p></div>
 <aside>PEDRO (≈ 45 s). O AlphaFold está escrito em Python sobre JAX e Haiku, e usa ferramentas clássicas para os alinhamentos: HMMER e HH-suite. Há quatro formas de o usar. O AlphaFold Server dá acesso ao AF3 no browser, mas com quota diária e só para uso não comercial. O ColabFold corre o AF2 num notebook com GPU gratuita e substitui as pesquisas de homólogos por MMseqs2, 40 a 60 vezes mais rápido. A AlphaFold DB tem as previsões já feitas, acessíveis por API. A instalação local é por Docker e exige GPU e até 2,6 TB de bases de dados; o AF3 pede ainda 64 GB de RAM e uma GPU de classe A100. No Bioconda só está o ColabFold. Nós usámos as três primeiras.</aside>
 </section>
 <section id="algoritmo">
@@ -264,7 +264,7 @@ html, body { margin: 0; height: 100%; background: #0f0c1d; overflow: hidden; }
 </ul>
 </div>
 </div>
-<div class="foot"><p>AlphaFold 2 e 3 · UC Ómicas</p><p class="pg"></p></div>
+<div class="foot"><p>AlphaFold · UC Ómicas</p><p class="pg"></p></div>
 <aside>PEDRO (≈ 60 s). O princípio é a coevolução: resíduos que estão em contacto mutam de forma correlacionada, e isso fica registado no alinhamento múltiplo. O AF2 mantém uma representação do MSA e outra de pares de resíduos; o Evoformer, com 48 blocos, troca informação entre as duas, e as atualizações triangulares impõem consistência geométrica. O Structure Module trata cada resíduo como um corpo rígido e usa Invariant Point Attention; o processo repete-se três vezes (recycling) e termina com uma relaxação Amber. O AF3 simplifica o MSA, troca o Evoformer pelo Pairformer e, sobretudo, substitui o Structure Module por um módulo de difusão, como nos geradores de imagens: parte de ruído e refina até às coordenadas de todos os átomos. Por isso modela qualquer biomolécula — mas, sendo generativo, pode “alucinar” estrutura em regiões desordenadas.</aside>
 </section>
 <section id="workflow" class="alt">
@@ -275,7 +275,7 @@ html, body { margin: 0; height: 100%; background: #0f0c1d; overflow: hidden; }
 <div class="fig" style="align-self:center">
 <img src="assets/workflow.png" alt="Fluxo de trabalho: 1 input (FASTA ou JSON), 2 pesquisa de homólogos (MSA e templates), 3 tronco (Evoformer no AF2, Pairformer no AF3), 4 estrutura (Structure Module no AF2, difusão no AF3), 5 output (5 modelos e métricas de confiança)" style="width:1500px;height:601px;object-fit:contain">
 </div>
-<div class="foot"><p>AlphaFold 2 e 3 · UC Ómicas</p><p class="pg"></p></div>
+<div class="foot"><p>AlphaFold · UC Ómicas</p><p class="pg"></p></div>
 <aside>PEDRO (≈ 40 s). Este é o nosso esquema do fluxo de trabalho. Entra a sequência — ou, no AF3, o JSON com todas as moléculas. Segue-se a pesquisa de homólogos e de templates, que corre em CPU e é o passo mais demorado numa instalação local. Depois vem a rede neuronal, em GPU: o tronco (Evoformer no AF2, Pairformer no AF3) e a geração da estrutura (Structure Module ou difusão). No fim saem cinco modelos ordenados por confiança, em PDB ou mmCIF, e as métricas de confiança em JSON. Passo ao Artur, que vai mostrar o que isto devolve na prática.</aside>
 </section>
 <section id="metricas">
@@ -284,12 +284,12 @@ html, body { margin: 0; height: 100%; background: #0f0c1d; overflow: hidden; }
 <h2>Cinco modelos + a confiança em cada um</h2>
 </div>
 <div class="cards c3">
-<div class="card anim" style="--i:0"><h3>pLDDT</h3><p class="eyebrow">0–100, POR RESÍDUO</p><p class="txt">&gt; 90 muito alta · 70–90 confiante · &lt; 50 provável desordem. Fica na coluna B-factor do modelo.</p></div>
+<div class="card anim" style="--i:0"><h3>pLDDT</h3><p class="eyebrow">0–100, POR RESÍDUO</p><p class="txt">&gt; 90 muito alta · 70–90 confiante · 50–70 baixa · &lt; 50 provável desordem. Fica na coluna B-factor do modelo.</p></div>
 <div class="card anim" style="--i:1"><h3>PAE</h3><p class="eyebrow">Å, MATRIZ N × N</p><p class="txt">Erro esperado na posição relativa de dois resíduos: confiança entre domínios e entre cadeias.</p></div>
 <div class="card anim" style="--i:2"><h3>pTM e ipTM</h3><p class="eyebrow">0–1</p><p class="txt">Topologia global e interfaces. ipTM &gt; 0,8: complexo de confiança; &lt; 0,6: provável falha.</p></div>
 </div>
 <p class="note">Os modelos vêm em PDB ou mmCIF e as métricas em JSON. As métricas são calibradas em cada versão e <b>não se comparam entre AF2 e AF3</b>: a validação objetiva faz-se contra estruturas experimentais (RMSD, TM-score).</p>
-<div class="foot"><p>AlphaFold 2 e 3 · UC Ómicas</p><p class="pg"></p></div>
+<div class="foot"><p>AlphaFold · UC Ómicas</p><p class="pg"></p></div>
 <aside>ARTUR (≈ 40 s). Cada previsão devolve cinco modelos ordenados e três tipos de métricas de confiança. O pLDDT, de 0 a 100, é por resíduo: acima de 90 é muito alta, abaixo de 50 indica normalmente uma região desordenada; vem guardado no B-factor, por isso qualquer visualizador colore o modelo pela confiança. O PAE é uma matriz que diz quão certa é a posição relativa de dois resíduos — útil para domínios e cadeias. O pTM e o ipTM estimam a qualidade global e das interfaces. Atenção: estas métricas não se comparam entre versões; para validar a sério, compara-se com estruturas experimentais. Foi o que fizemos.</aside>
 </section>
 <section id="exemplo" class="alt" style="gap:32px">
@@ -305,7 +305,7 @@ html, body { margin: 0; height: 100%; background: #0f0c1d; overflow: hidden; }
 <div class="chip anim" style="--i:1"><p class="n">&lt; 0,5 Å</p><p class="l">RMSD do núcleo (3 fontes)</p></div>
 <div class="chip anim" style="--i:2"><p class="n">0,4–0,8 Å</p><p class="l">desvio do Fe dos hemes (AF3)</p></div>
 </div>
-<div class="foot"><p>AlphaFold 2 e 3 · UC Ómicas</p><p class="pg"></p></div>
+<div class="foot"><p>AlphaFold · UC Ómicas</p><p class="pg"></p></div>
 <aside>ARTUR (≈ 50 s). Previmos duas proteínas humanas pelas três vias: a ubiquitina, 76 resíduos, e a hemoglobina, um tetrâmero com quatro hemes. O gráfico mostra o pLDDT: acima de 90 em quase tudo, com uma queda na cauda C-terminal da ubiquitina, que é flexível — e é precisamente a parte que se liga às proteínas-alvo. Comparámos com as estruturas cristalográficas com código próprio em Python: TM-score de 0,96 e desvio do núcleo abaixo de meio ångström, menos do que a resolução do próprio cristal. O ColabFold e a AlphaFold DB deram o mesmo resultado, o que confirma que o MMseqs2 não perde exatidão. E o AF3 colocou os quatro hemes no sítio certo, com o ferro a menos de 1 Å da posição no cristal, ligado à histidina proximal correta.</aside>
 </section>
 <section id="estados" class="dark" data-transition="fade">
@@ -320,7 +320,7 @@ html, body { margin: 0; height: 100%; background: #0f0c1d; overflow: hidden; }
 </div>
 <div style="flex:1"></div>
 <p class="lead">Ambos com confiança muito alta (ipTM 0,88 e 0,93). O AlphaFold devolve <b>uma única conformação estática</b>: a confiança não diz qual estado foi previsto, nem que a proteína alterna entre eles.</p>
-<div class="foot"><p>AlphaFold 2 e 3 · UC Ómicas</p><p class="pg"></p></div>
+<div class="foot"><p>AlphaFold · UC Ómicas</p><p class="pg"></p></div>
 <aside>ARTUR (≈ 50 s). Aqui está a surpresa. A hemoglobina alterna entre o estado T, sem oxigénio, e o estado R, com oxigénio — é a base da ligação cooperativa. As cadeias individuais saíram quase iguais nas duas versões, mas a montagem do tetrâmero não: o AF3 ficou a 0,43 Å do estado T, e o AF2-Multimer mais perto do estado R, a 1 Å. Para escala, os dois estados experimentais diferem 2,35 Å. Ambas as previsões tinham confiança muito alta. Não conseguimos atribuir a diferença a uma única causa — o AF3 tinha os hemes e usou templates — mas a lição é clara: o AlphaFold dá uma fotografia estática, e a confiança alta não nos diz qual dos estados fisiológicos estamos a ver.</aside>
 </section>
 <section id="licencas">
@@ -342,7 +342,7 @@ html, body { margin: 0; height: 100%; background: #0f0c1d; overflow: hidden; }
 </div>
 </div>
 <p class="note">AF3: versões regulares (v3.0.5, out. 2026). AF2: sem versões novas desde 2023. Alternativas totalmente abertas: OpenFold3, Boltz, Chai-1.</p>
-<div class="foot"><p>AlphaFold 2 e 3 · UC Ómicas</p><p class="pg"></p></div>
+<div class="foot"><p>AlphaFold · UC Ómicas</p><p class="pg"></p></div>
 <aside>ARTUR (≈ 40 s). É open-source? Em parte. O AF2 é totalmente aberto: código Apache 2.0 e pesos CC BY 4.0, com uso comercial. No AF3, o código é Apache 2.0, mas os pesos só se obtêm a pedido à Google e para uso não comercial, tal como o AlphaFold Server. A comunidade é muito ativa: o AF3 tem versões regulares — a última é de outubro — enquanto o AF2 está em manutenção. O impacto é enorme: mais de 45 mil citações para o artigo do AF2. E as restrições do AF3 levaram ao aparecimento de alternativas abertas como o OpenFold3 e o Boltz.</aside>
 </section>
 <section id="limitacoes" class="alt">
@@ -358,7 +358,7 @@ html, body { margin: 0; height: 100%; background: #0f0c1d; overflow: hidden; }
 <div class="card anim" style="--i:4"><h3>Ligandos e complexos</h3><p class="txt">AF2 sem ligandos; Server com lista fechada; AFDB só cadeias isoladas.</p></div>
 <div class="card anim" style="--i:5"><h3>Recursos e licenças</h3><p class="txt">GPU e terabytes de bases de dados; pesos do AF3 só para uso não comercial.</p></div>
 </div>
-<div class="foot"><p>AlphaFold 2 e 3 · UC Ómicas</p><p class="pg"></p></div>
+<div class="foot"><p>AlphaFold · UC Ómicas</p><p class="pg"></p></div>
 <aside>ARTUR (≈ 40 s). Resumindo as limitações. Primeiro, a que vimos na hemoglobina: uma única conformação estática. Segundo, as regiões desordenadas, com pLDDT baixo — e o AF3 pode inventar estrutura onde ela não existe. Terceiro, não prevê bem o efeito de mutações pontuais: tende a devolver a mesma estrutura. Quarto, depende do alinhamento: com menos de cerca de 30 homólogos a exatidão cai. Quinto, ligandos e complexos: o AF2 não os modela, o Server tem uma lista fechada e a AFDB só tem cadeias isoladas — a ubiquitina madura nem lá existe, só os precursores. E por fim os recursos computacionais e as licenças. Devolvo a palavra ao Afonso.</aside>
 </section>
 <section id="conclusao" class="dark">
@@ -385,7 +385,7 @@ html, body { margin: 0; height: 100%; background: #0f0c1d; overflow: hidden; }
 <p class="nomes">Afonso Marcos · Pedro Afonso · Artur Anselmo</p>
 <p class="data">15 de dezembro de 2026</p>
 </div>
-<aside>AFONSO (≈ 20 s). Apresentamo-nos e anunciamos o tema: o AlphaFold, nas versões 2 e 3, analisado segundo os quatro eixos do enunciado — enquadramento biológico, implementação, algoritmo e reprodutibilidade/limitações. Para além da análise, usámos a ferramenta nas suas três formas de acesso e mostramos os resultados.</aside>
+<aside>AFONSO. Diapositivo de fecho, fica no ecrã durante as perguntas. Obrigado pela atenção.</aside>
 </section>
 </div>
 <div id="notas" aria-live="polite"></div>
