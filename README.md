@@ -1,4 +1,4 @@
-# AlphaFold 2 e 3 — Trabalho da UC Ómicas (2026/27)
+# AlphaFold — Trabalho da UC Ómicas (2026/27)
 
 Trabalho de grupo (FCUP/FFUP) sobre o AlphaFold: relatório escrito e apresentação oral.
 Grupo: Afonso Marcos, Pedro Afonso, Artur Anselmo.
