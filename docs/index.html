@@ -128,6 +128,10 @@ section.capa { padding: 112px 128px 112px; justify-content: space-between; gap: 
 @keyframes sobe { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
 .anim { animation: sobe 500ms ease-out both; animation-delay: calc(var(--i, 0) * 120ms); }
 
+/* diapositivos com figuras de fundo branco: o fundo do slide acompanha a figura */
+section.branco { background: #ffffff; }
+section.branco .fig { padding: 0; border-radius: 0; }
+
 
 *, *::before, *::after { box-sizing: border-box; }
 html, body { margin: 0; height: 100%; background: #0f0c1d; overflow: hidden; }
@@ -267,7 +271,7 @@ html, body { margin: 0; height: 100%; background: #0f0c1d; overflow: hidden; }
 <div class="foot"><p>AlphaFold · UC Ómicas</p><p class="pg"></p></div>
 <aside>PEDRO (≈ 60 s). O princípio é a coevolução: resíduos que estão em contacto mutam de forma correlacionada, e isso fica registado no alinhamento múltiplo. O AF2 mantém uma representação do MSA e outra de pares de resíduos; o Evoformer, com 48 blocos, troca informação entre as duas, e as atualizações triangulares impõem consistência geométrica. O Structure Module trata cada resíduo como um corpo rígido e usa Invariant Point Attention; o processo repete-se três vezes (recycling) e termina com uma relaxação Amber. O AF3 simplifica o MSA, troca o Evoformer pelo Pairformer e, sobretudo, substitui o Structure Module por um módulo de difusão, como nos geradores de imagens: parte de ruído e refina até às coordenadas de todos os átomos. Por isso modela qualquer biomolécula — mas, sendo generativo, pode “alucinar” estrutura em regiões desordenadas.</aside>
 </section>
-<section id="workflow" class="alt">
+<section id="workflow" class="branco">
 <div class="head">
 <p class="eyebrow">FLUXO DE TRABALHO</p>
 <h2>Da sequência aos modelos</h2>
@@ -292,7 +296,7 @@ html, body { margin: 0; height: 100%; background: #0f0c1d; overflow: hidden; }
 <div class="foot"><p>AlphaFold · UC Ómicas</p><p class="pg"></p></div>
 <aside>ARTUR (≈ 40 s). Cada previsão devolve cinco modelos ordenados e três tipos de métricas de confiança. O pLDDT, de 0 a 100, é por resíduo: acima de 90 é muito alta, abaixo de 50 indica normalmente uma região desordenada; vem guardado no B-factor, por isso qualquer visualizador colore o modelo pela confiança. O PAE é uma matriz que diz quão certa é a posição relativa de dois resíduos — útil para domínios e cadeias. O pTM e o ipTM estimam a qualidade global e das interfaces. Atenção: estas métricas não se comparam entre versões; para validar a sério, compara-se com estruturas experimentais. Foi o que fizemos.</aside>
 </section>
-<section id="exemplo" class="alt" style="gap:32px">
+<section id="exemplo" class="branco" style="gap:32px">
 <div class="head">
 <p class="eyebrow">EXEMPLO PRÁTICO: AF2, AF3 E ALPHAFOLD DB</p>
 <h2>Ubiquitina e hemoglobina humanas</h2>
